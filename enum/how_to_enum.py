@@ -1,6 +1,11 @@
 from enum import Enum
 
-"""Set symbolic names bound to unique, constant values."""
+"""
+Set symbolic names bound to unique, constant values.
+https://docs.python.org/3/library/enum.html
+"""
+
+
 
 # Define
 class Colors(Enum):
