@@ -8,3 +8,11 @@ Main Python functionality - no frameworks or special libraries
 
 
 `sys.path.append("../../xls-transformer")` Add the folder to `path`to make modules in other folders available for `import`<br/>.
+
+
+
+
+
+
+
+[Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)<br/>
