@@ -11,6 +11,8 @@ Main Python functionality - no frameworks or special libraries
 
 
 
+`print("It's true!" if condition else "It's false")`  One-liner if-else.  
+
 
 
 
