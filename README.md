@@ -15,14 +15,14 @@ Main Python functionality - no frameworks or special libraries
 
 
 ## Regular expressions
-`recomp = re.compile(r'(a(.*)(c.*)\s')` # Compiling first is quicker
-`match_obj = recomp.match('abbcde f')` # Must match start.
-`match_obj.group(x)` x=None: "abbcde", x=1: "bb", x=2: "cde"
-`first, second = match_obj.groups()` ('bb', 'cde')
-`match_obj = re.search(r"a(.*)(c.*)\s", "zabbcde f")` # Match anywhere
-`new_text = re.sub(r"a", "A", "abcabc")` # AbcAbc
-`re.findall(r"a(bc.)d", "bc1bc2abc3abc4d")`  # List of params
-`re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`
+`recomp = re.compile(r'(a(.*)(c.*)\s')` # Compiling first is quicker  
+`match_obj = recomp.match('abbcde f')` # Must match start.  
+`match_obj.group(x)` x=None: "abbcde", x=1: "bb", x=2: "cde"  
+`first, second = match_obj.groups()` ('bb', 'cde')  
+`match_obj = re.search(r"a(.*)(c.*)\s", "zabbcde f")`  Match anywhere  
+`new_text = re.sub(r"a", "A", "abcabc")`  AbcAbc  
+`re.findall(r"a(bc.)d", "bc1bc2abc3abc4d")`  List of params  
+`re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`  
 
 
 
