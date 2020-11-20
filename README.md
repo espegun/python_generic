@@ -14,6 +14,16 @@ Main Python functionality - no frameworks or special libraries
 `print("It's true!" if condition else "It's false")`  One-liner if-else.  
 
 
+## Sorting
+```
+from datetime import date
+import datetime
+my_items = [{"name": "Mathias", "dob": "06.11.2018"},
+            {"name": "Espen", "dob": "27.11.1977"},
+            {"name": "Gro", "dob": "16.02.1978"}]
+sorted_items = sorted(my_items, key=lambda item: datetime.datetime.strptime(item["dob"], "%d.%m.%Y").date())
+```
+
 ## Regular expressions
 `recomp = re.compile(r'(a(.*)(c.*)\s')` # Compiling first is quicker  
 `match_obj = recomp.match('abbcde f')` # Must match start.  
