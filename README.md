@@ -11,7 +11,7 @@ Main Python functionality - no frameworks or special libraries
 
 
 
-`print("It's true!" if condition else "It's false")`  One-liner if-else.  
+`print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
 
 ## Sorting
