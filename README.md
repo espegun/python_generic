@@ -11,6 +11,36 @@ Main Python functionality - no frameworks or special libraries
 
 
 
+`print("It's true!" if condition else "It's false")`  if-else one-liner.  
+
+
+## Sorting
+```
+from datetime import date
+import datetime
+my_items = [{"name": "Mathias", "dob": "06.11.2018"},
+            {"name": "Espen", "dob": "27.11.1977"},
+            {"name": "Gro", "dob": "16.02.1978"}]
+sorted_items = sorted(my_items, key=lambda item: datetime.datetime.strptime(item["dob"], "%d.%m.%Y").date())
+```
+
+## Regular expressions
+`recomp = re.compile(r'(a(.*)(c.*)\s')` # Compiling first is quicker  
+`match_obj = recomp.match('abbcde f')` # Must match start.  
+`match_obj.group(x)` x=None: "abbcde", x=1: "bb", x=2: "cde"  
+`first, second = match_obj.groups()` ('bb', 'cde')  
+`match_obj = re.search(r"a(.*)(c.*)\s", "zabbcde f")`  Match anywhere  
+`new_text = re.sub(r"a", "A", "abcabc")`  AbcAbc  
+`re.findall(r"a(bc.)d", "bc1bc2abc3abc4d")`  List of params  
+`re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`  
+
+
+
+
+
+
+
+
 
 
 
