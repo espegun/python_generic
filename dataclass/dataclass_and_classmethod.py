@@ -55,5 +55,14 @@ print(b1)
 d = {"text1": "Bazinga!", "number2": 10, "number1": 1}
 #b2 = B.init_from_dict(d)  # Magnus think @classmethod is nice. Haven't really understood why yet, hmmm...
 
+
+## Remember: You can also make custom asdict methods, something like:
+# def asjson(self):
+#     d = asdict(self)
+#     d["some_key"] = self.some_key + 10  # Overwrite
+#     return d  # Evt return json.dumps(d)
+
+
+
 print("That was fun!")
 
