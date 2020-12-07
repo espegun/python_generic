@@ -35,12 +35,14 @@ sorted_items = sorted(my_items, key=lambda item: datetime.datetime.strptime(item
 `re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`  
 
 
-
-
-
-
-
-
+## Itertools
+Get all the combinations of two lists  
+```
+years = [2014, 2015, 2016]
+chars = list("ABC")
+for y, c in product(years, chars):
+    print(y, c)
+```
 
 
 
