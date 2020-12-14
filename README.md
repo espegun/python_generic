@@ -45,6 +45,11 @@ for y, c in product(years, chars):
 ```
 
 
+## Generators
+`next(iterator, default)` Returns the next item in `iterator` and the `default` if exhausted. May use it to find a single element in a list:  
+`element = next((element = next((j for j in my_list if j.name == "Something"), None)`  
+
+
 
 
 [Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)<br/>
