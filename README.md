@@ -1,5 +1,5 @@
-# python_generic
-Main Python functionality - no frameworks or special libraries
+# Generic Python
+The core language - no frameworks or external libraries
 
 
 [Python style guide](https://www.python.org/dev/peps/pep-0008/) Les den, bruk det, få færre kommentarer i PR'ene.<br/>
