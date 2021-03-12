@@ -50,9 +50,10 @@ for y, c in product(years, chars):
 `element = next((element = next((j for j in my_list if j.name == "Something"), None)`  
 
 ## Decorators
-https://www.datacamp.com/community/tutorials/decorators-python
+Add a wrapper function around another function, often used for logging and timing.
+[Tutorial](https://www.datacamp.com/community/tutorials/decorators-python)  
+[Why decorators are pure genius](https://towardsdatascience.com/why-decorators-in-python-are-pure-genius-1e812949a81e) **READ IT**   
+[Example file](https://github.com/espegun/python_generic/blob/main/decorators.py)  
 
-
-
-
+## Links
 [Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)<br/>
