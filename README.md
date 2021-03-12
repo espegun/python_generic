@@ -49,6 +49,9 @@ for y, c in product(years, chars):
 `next(iterator, default)` Returns the next item in `iterator` and the `default` if exhausted. May use it to find a single element in a list:  
 `element = next((element = next((j for j in my_list if j.name == "Something"), None)`  
 
+## Decorators
+https://www.datacamp.com/community/tutorials/decorators-python
+
 
 
 
