@@ -57,3 +57,7 @@ Add a wrapper function around another function, often used for logging and timin
 
 ## Links
 [Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)<br/>
+
+
+TBD: JSON
+[Dette kan du, men sjekk det siste tipset](https://medium.com/pythonland/6-tricks-to-effectively-use-json-in-python-3d66381a71ea)
