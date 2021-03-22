@@ -14,6 +14,7 @@ The core language - no frameworks or external libraries
 `print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
 
+
 ## Sorting
 ```
 from datetime import date
