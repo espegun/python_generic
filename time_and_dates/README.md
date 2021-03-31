@@ -2,6 +2,7 @@
 
 ## The purpose
 ...  
+Bruk ISO-8601. See RFC#4 i [Origos RFC](https://github.com/oslokommune/rfc/tree/main).
 
 ## How does it work?
 ...  
