@@ -57,8 +57,8 @@ Add a wrapper function around another function, often used for logging and timin
 [Repo example file](https://github.com/espegun/python_generic/blob/main/decorators.py)  
 
 ## Links
-[Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)<br/>
-
+[Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)
+[The Zen of Python - forklart](https://python.plainenglish.io/pythons-rules-programming-by-the-creator-of-the-code-26a6201ade4)  
 
 TBD: os module
 `src_dir = os.path.join(os.getcwd(), "test", "src")`  
