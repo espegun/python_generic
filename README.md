@@ -66,3 +66,5 @@ TBD: os module
 
 TBD: JSON
 [Dette kan du, men sjekk det siste tipset](https://medium.com/pythonland/6-tricks-to-effectively-use-json-in-python-3d66381a71ea)
+TBD:
+Generelt eller i pysqlite3. SQL.
