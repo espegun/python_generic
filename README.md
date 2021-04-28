@@ -54,6 +54,7 @@ for y, c in product(years, chars):
 Add a wrapper function around another function, often used for logging and timing.  
 [Tutorial](https://www.datacamp.com/community/tutorials/decorators-python)  
 [Why decorators are pure genius](https://towardsdatascience.com/why-decorators-in-python-are-pure-genius-1e812949a81e) **READ IT**   
+[Øyvind anbefale denne videoen om decorators](https://www.youtube.com/watch?v=MjHpMCIvwsY)  
 [Repo example file](https://github.com/espegun/python_generic/blob/main/decorators.py)  
 
 ## Links
