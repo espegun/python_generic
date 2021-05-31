@@ -56,6 +56,7 @@ Add a wrapper function around another function, often used for logging and timin
 [Why decorators are pure genius](https://towardsdatascience.com/why-decorators-in-python-are-pure-genius-1e812949a81e) **READ IT**   
 [Øyvind anbefale denne videoen om decorators](https://www.youtube.com/watch?v=MjHpMCIvwsY)  
 [Repo example file](https://github.com/espegun/python_generic/blob/main/decorators.py)  
+[Great premade decorators](https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871)  
 
 ## Links
 [The Zen of Python - forklart](https://python.plainenglish.io/pythons-rules-programming-by-the-creator-of-the-code-26a6201ade4)  
