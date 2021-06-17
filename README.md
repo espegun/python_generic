@@ -14,6 +14,14 @@ The core language and it's standard library - no frameworks or external librarie
 `print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
 
+## os
+Use bash commands from Python - the `subprocess` module also has options.  
+```
+with os.popen("ls -la") as f:
+    output = f.read()
+print(output)
+```
+
 
 ## Sorting
 ```
