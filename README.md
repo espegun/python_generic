@@ -13,6 +13,8 @@ The core language and it's standard library - no frameworks or external librarie
 
 `print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
+## OOP in Python
+https://realpython.com/python3-object-oriented-programming/
 
 ## os
 Use bash commands from Python - the `subprocess` module also has options.  
