@@ -21,7 +21,7 @@ parser.add_argument(
 )  # A flag: True if added, False if not
 parser.add_argument(
     "-o", "--other_arg", help="also print this value"
-)  # --other_arg SOMETHING
+)  # Saved as args.other_arg
 
 args = parser.parse_args()
 print(f"Hello, {args.name}, so you are {args.age} years old.")
