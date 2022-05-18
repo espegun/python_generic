@@ -50,7 +50,7 @@ content = "xAbcdA___A123_Adsad"
 PATTERN = r"A(.*?)A"
 print(re.findall(PATTERN, content))
 ```  
---> `['bcd', '123_']` With non-greedy pattern (`?`)  
+--> `['bcd', '123_']` With non-greedy pattern (`?`), '?' <-- Grab as little as possible.
 --> `['bcdA___A123_']` With greedy pattern (no `?`)  
 
 
