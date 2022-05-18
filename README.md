@@ -45,12 +45,15 @@ sorted_items = sorted(my_items, key=lambda item: datetime.datetime.strptime(item
 `re.findall(r"a(bc.)d", "bc1bc2abc3abc4d")`  List of params  
 `re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`  
 
+See examples of match, findall and sub in the xxx directory.
+
+
 ```
 content = "xAbcdA___A123_Adsad"
 PATTERN = r"A(.*?)A"
 print(re.findall(PATTERN, content))
 ```  
---> `['bcd', '123_']` With non-greedy pattern (`?`), '?' <-- Grab as little as possible.
+--> `['bcd', '123_']` With non-greedy pattern (`?`), '?' <-- Grab as little as possible.  
 --> `['bcdA___A123_']` With greedy pattern (no `?`)  
 
 
