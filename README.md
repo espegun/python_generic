@@ -45,7 +45,7 @@ sorted_items = sorted(my_items, key=lambda item: datetime.datetime.strptime(item
 `re.findall(r"a(bc.)d", "bc1bc2abc3abc4d")`  List of params  
 `re.sub(r"(<A>.*</A>)(.*)(<B>.*</B>)", r"\3\2\1", r"<A>Aa</A>_<B>Bb</B>")`  
 
-See examples of match, findall and sub in the xxx directory.
+See examples of match, findall and sub in the [regex_testing](https://github.com/espegun/python_generic/tree/main/regex_testing) directory.
 
 
 ```
