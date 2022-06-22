@@ -21,7 +21,7 @@ parser.add_argument(
 )  # Will always be given the default argument, but may be overwritten by using -e
 parser.add_argument(
     "-f", "--fysen", nargs="?", const="pizza"
-)  # Not default argument, but if -f is given, it will be assigned Pizza, which could be overwritten using -f Soup
+)  # Not default argument, but if -f is given, it will be assigned pizza, which could be overwritten using -f Soup
 parser.add_argument(
     "-v", "--verbose", help="add extra chit-chat", action="store_true"
 )  # A flag: True if added, False if not
