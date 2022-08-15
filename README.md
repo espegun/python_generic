@@ -2,7 +2,7 @@
 The core language and it's standard library - no frameworks or external libraries.
 
 ## The installation
-
+Understanding which interpreter is being used and where it's packages are installed.  
 `> python -c "import sys; print(sys.executable)"` Where is the location of `python.exe` for the current interpreter.  
 `> python -c "import site; print(site.getsitepackages())"` Where is `site-packages` of the current interpreter.  
 `> pip show <package name>` Shows where a package is located.  
