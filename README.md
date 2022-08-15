@@ -1,6 +1,18 @@
 # Generic Python
 The core language and it's standard library - no frameworks or external libraries.
 
+## The installation
+
+`> python -c "import sys; print(sys.executable)"` Where is the location of `python.exe` for the current interpreter.
+`> python -c "import site; print(site.getsitepackages())"` Where is `site-packages` of the current interpreter.
+`> pip show <package name>` Shows where a package is located.  
+`> python -m pip show <package name>` Shows where a package is located (using the current interpreter).  
+
+Check `PATH`.  
+
+
+## ...
+
 [Python style guide](https://www.python.org/dev/peps/pep-0008/) Les den, bruk det, få færre kommentarer i PR'ene.  
 [Python patterns](https://github.com/faif/python-patterns)  
 
