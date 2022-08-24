@@ -1,4 +1,6 @@
+
 # Source: https://realpython.com/python-gui-tkinter/#building-your-first-python-gui-application-with-tkinter
+
 import sys
 from platform import uname
 
@@ -13,8 +15,11 @@ except ModuleNotFoundError:
     print("$ sudo apt-get install python3-tk")
     sys.exit(1)
 
-window = tk.Tk()  # All Widgets are inside a Window
-label1 = tk.Label(text="This is a label.")
-label1.pack()  # Add Adding the widget to the Window.
+root = tk.Tk()  # All Widgets are inside a Window, the top often name root
+# root.geometry("200x200")
+label1 = tk.Label(root, text="This is a label.")
+label1.pack()  # Add the widget to the Window.
+
+root.mainloop()  # This method listens to events like clicks and keypresses
 
 print("That was fun.")
