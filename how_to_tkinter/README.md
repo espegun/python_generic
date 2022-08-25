@@ -7,11 +7,11 @@
 * The height of a row and width of a column depends on highest and widest widget in it, respectively.
 * Using `rowspan` or `columnspan` > 1, cells can span more than one row/column.
 
-*Is this the actual algorithm*.
+*Is this the actual algorithm(?)*.
 1. Specify the `height`and `width` for those widgets which needs it specified.
-2. Specify the `weight` of each row and column, determining their relative height and width.
+2. Specify the `weight` of each row and column, determining their relative height and width. E.g. `frm_1.columnconfigure(0, weight=1)`
 3. Given the above, the Geometry manager will calculate the actual height and width of each row and column (and the cells in their intersections).
-4. Then all the widgets should be placed in their cells. Always specify `sticky` for the alignment of the width within the cell. `ns` and `ew` will stretch the widget to fill the cell, vertically and horizontally. 
+4. Then all the widgets should be placed in their cells using `widget.grid(column=c, row=r, sticky="..")`. Always specify `sticky` for the alignment of the width within the cell. `ns` and `ew` will stretch the widget to fill the cell, vertically and/or horizontally. 
 
 
 ## Sources
