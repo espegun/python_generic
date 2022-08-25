@@ -14,6 +14,9 @@
 4. Then all the widgets should be placed in their cells using `widget.grid(column=c, row=r, sticky="..")`. Always specify `sticky` for the alignment of the width within the cell. `ns` and `ew` will stretch the widget to fill the cell, vertically and/or horizontally. 
 
 
+A *Frame* can be stretched using `sticky`, but using `sticky` on the Frame's sub-widgets will not strech the Frame.
+
+
 ## Sources
 [Tkinter tutorial @ RealPython](https://realpython.com/python-gui-tkinter/#building-your-first-python-gui-application-with-tkinter)  
 [Tkinter @ Tutorialspoint](https://www.tutorialspoint.com/python/python_gui_programming.htm) Very structured when looking up colors, widgets, geometry managers.  
