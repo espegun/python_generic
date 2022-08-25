@@ -6,8 +6,10 @@
 * The intersection of a row and column is called a *cell*. Every cell can only contain one *widget*, but this could be a *Frame*, which could have sub-widgets.
 * The height of a row and width of a column depends on highest and widest widget in it, respectively.
 * Using `rowspan` or `columnspan` > 1, cells can span more than one row/column.
+---
+*Use ipadx, ipady and padx, pady to add internal and external paddings.*
 
-*Is this the actual algorithm(?)*.
+This seems to be the algorithm:  
 1. Specify the `height`and `width` for those widgets which needs it specified.
 2. Specify the `weight` of each row and column, determining their relative height and width. E.g. `frm_1.columnconfigure(0, weight=1)`
 3. Given the above, the Geometry manager will calculate the actual height and width of each row and column (and the cells in their intersections).
