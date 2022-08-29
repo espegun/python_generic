@@ -33,3 +33,5 @@ btn_only.bind("<Button-1>", start_threads)
 
 tk.mainloop()
 
+################ NOW - TRY THIS ######
+# https://www.oreilly.com/library/view/python-cookbook/0596001673/ch09s07.html
