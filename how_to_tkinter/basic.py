@@ -15,6 +15,9 @@ except ModuleNotFoundError:
     print("$ sudo apt-get install python3-tk")
     sys.exit(1)
 
+def clicked(event):
+    root.after(2000, print, "Print this", "and this")  # Wait, function, arg(s) to function
+
 root = tk.Tk()  # All Widgets are inside a Window, the top often name root
 # root.geometry("200x200")
 # Widgets are normally named widgetclass_descriptive
@@ -24,6 +27,8 @@ lbl_1 = tk.Label(frm_1, text="This is a label.")
 btn_1 = tk.Button(frm_2, text="Click me!")
 ent_1 = tk.Entry(frm_1)  # Get and modify text with .get(), .delete() and .insert()
 txt_1 = tk.Text(frm_2)  # Chars .get("<line>.<char>", "<line>.<char>")
+
+btn_1.bind("<Button-1>", clicked)
 
 lbl_1.pack()  # Add the widget to the Window.
 btn_1.pack()
