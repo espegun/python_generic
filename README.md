@@ -96,6 +96,7 @@ Add a wrapper function around another function, often used for logging and timin
 [The ultimate cheat sheet - a README](https://github.com/gto76/python-cheatsheet)  
 [Importany Python concepts LES](https://dacus-augustus.medium.com/top-12-most-important-python-concepts-24f59945a409)
 [Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)
+[Lots of tutorials @ geeksforgeeks](https://www.geeksforgeeks.org/python-programming-language/?ref=shm)  
 
 TBD: os module
 `src_dir = os.path.join(os.getcwd(), "test", "src")`  
