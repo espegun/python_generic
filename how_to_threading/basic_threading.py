@@ -1,31 +1,26 @@
-# https://realpython.com/intro-to-python-threading/
-
-# import threading  # The basic Python threading module
-import concurrent.futures  # Use ThreadPoolExecuteor instead
-import random
+import threading
 import time
 
-def thread_function(name: str):
+def threading_function(name: str, sleep_time: float):
 
-    """
-    The threading (target) function, of which several will run
-    in parallell.
-    """
-
-    sleep_time = random.random() * 5
-    print(f"Thread {name} starting. Sleep time is {sleep_time:.2f} seconds.")
+    print(f"Threading function {name} started.")
     time.sleep(sleep_time)
-    print(f"Thread {name} finished.")
-
+    print(f"Threading function {name} finished.")
 
 if __name__ == "__main__":
 
-    thread_names = list("ABCD")
-    
-    with concurrent.futures.ThreadPoolExecutor(max_workers=len(thread_names)) as executor:
-        # Send content of iterable as argument(s) to the target function
-        executor.map(thread_function, thread_names)
+    print("Single Thread")
+    th1 = threading.Thread(target=threading_function, args = ("A", 2))
+    th1.start()
+    th1.join()  # Wait for it to finish
 
-    # All the threads have to finish and join before moving on  
-    print("All the threads are finished.")
-  
+    print("Several Threads")
+    th2 = threading.Thread(target=threading_function, args=("B", 5))
+    th3 = threading.Thread(target=threading_function, args=("C", 2))
+    for th in [th2, th3]:
+        th.start()
+    for th in [th2, th3]:
+        th.join()
+    print("All the threads have finished.")
+
+    print("That was fun.")
