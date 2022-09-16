@@ -10,16 +10,25 @@
 * However, below the hood, Python threads are limited to actually run one at a time, even when running on different CPUs. If you wish to process using several CPUs at once, use the `multiprocessing` module.
 
 ## Threading basics
-See the file 
-
-
+* Create a `th = threading.Thread(target=some_function....)` object which runs a target function.
+* Start the thread `th.start()`
+* Wait until it is finished: `th.join()`
+* You can manually handle several threads have finished using this approach.
+  ```
+  for th in [...threads...]:
+      th.start()
+  for th in [...threads...]:
+      th.join()
+  ```
+See `basic_threading.py` for an example.
 
 ## ThreadPoolExecutor
 
-Have a look at the explanation above. Instead of using the basic, underlying `threading` module which uses `t.start()` and `t.join()`, rather use `concurrent.futures.ThreadPoolExecutor` which handles a bunch of threads in parallell and wait for the last one to finish. See the example-file in this repo.
+Instead of using the basic, underlying `threading` module which uses `t.start()` and `t.join()`, rather use `concurrent.futures.ThreadPoolExecutor` which handles a pool of threads in parallell and wait for the last one to finish. 
 
-
+See the `ThreadPoolExecutor_Examples.py` for examples.
 
 ## Queue - cross thread communication
-...TBD..
+Use `queue.Queue` to communicate between threads. It has the locking mechanisms needed when there are several producers and/or consumers.
 
+See the example in `threads_and_queues.py`.
