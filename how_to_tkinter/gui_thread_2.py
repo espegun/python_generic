@@ -39,7 +39,7 @@ class ThreadedClient(self):
 
         self.root = root
         self.queue = Queue()
-        self.gui = Gui(root, queue)       
+        self.gui = Gui(root, self.queue)       
 
         self.running = True
         
