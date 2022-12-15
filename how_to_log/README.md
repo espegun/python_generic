@@ -1,7 +1,13 @@
 # Logging in Python
 
-* For the most basic example, see `logging_demo.py`
-* For parallell threads logging to different files, see `parallell_logs.py`
+* For the most basic example, see `logging_demo.py`. It uses the `logging.basicConfig` setup, which is simple and preferable if sufficient.
+* For parallell threads logging to different files, see `parallell_logs.py`. It creates separate `logger` objects.
+
+* `logger` objects should only be created by the `logging.getLogger` function
+* `logger` objects has handler objects, typically `FileHandler` which directs the logs to certains files.
+* `FileHandler` objects has `logging.Formatter`
+
+Note that it by design is difficult to remove `logger` objects, so rather reuse/redirect that creating many of them.
 
 Five levels of severity in decreasing order:
 * `logging.critical("Critical!")`
