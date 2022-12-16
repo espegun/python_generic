@@ -20,4 +20,7 @@ The main benefits between
 * Makes it easier to reuse code for related classes.
 * The inherited class (baseclass) can be seen as the inner core of of the inheriting class (subclass).
 
+
+*Composition over Inheritance?*
+
 ## Polymorphism
