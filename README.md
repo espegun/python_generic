@@ -1,6 +1,9 @@
 # Generic Python
 The core language and it's standard library - no frameworks or external libraries.
 
+Some useful concepts
+*In general handlers are functions that 'handle' certain events that they are registered for.*
+
 ## The installation
 Understanding which interpreter is being used and where it's packages are installed.  
 `> python -c "import sys; print(sys.executable)"` Where is the location of `python.exe` for the current interpreter.  
@@ -25,8 +28,6 @@ Check `PATH`.
 
 `print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
-## OOP in Python
-https://realpython.com/python3-object-oriented-programming/
 
 ## os
 Use bash commands from Python - the `subprocess` module also has options.  
