@@ -13,6 +13,9 @@ Classes are about:
 The main benefits between
 * Reduce the number of couplings across the code, related data and methods gathered in classes.
 
+## Abstraction
+....
+
 ## Encapsulation
 * Data in objects should not be directly accessible, only through methods - because.....
 
