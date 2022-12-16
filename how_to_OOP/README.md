@@ -13,17 +13,17 @@ Classes are about:
 The main benefits between
 * Reduce the number of couplings across the code, related data and methods gathered in classes.
 
-## Abstraction
+## OOP main concept 1: Abstraction
 ....
 
-## Encapsulation
+## OOP main concept 2: Encapsulation
 * Data in objects should not be directly accessible, only through methods - because.....
 
-## Inhertiance
+## OOP main concept 3: Inhertiance
 * Makes it easier to reuse code for related classes.
 * The inherited class (baseclass) can be seen as the inner core of of the inheriting class (subclass).
 
 
 *Composition over Inheritance?*
 
-## Polymorphism
+## OOP main concept 4: Polymorphism
