@@ -10,8 +10,8 @@ def listening_thread(queue: Queue):
 
     while True:
         print("Listening thread waking up...")
-        while not q.empty():
-            msg = q.get()
+        while not queue.empty():
+            msg = queue.get()
             print(f"Listening thread: {msg}")
             if msg == QUIT_STRING:
                 return 0
