@@ -95,4 +95,3 @@ class Gui:
 root = tk.Tk()
 client = ThreadedClient(root)
 root.mainloop()
-client.gui.
