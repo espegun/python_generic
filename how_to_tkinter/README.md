@@ -18,6 +18,11 @@ This seems to be the algorithm:
 
 A *Frame* can be stretched using `sticky`, but using `sticky` on the Frame's sub-widgets will not strech the Frame.
 
+## Popup windows
+You can use a Tkinter window to do some operations and return a value to the main script, see example in separte directory.  
+Remember - for Linux, zenity may be an alternative, at least if working with bash scripts.  
+
+
 
 ## Sources
 [Tkinter tutorial @ RealPython](https://realpython.com/python-gui-tkinter/#building-your-first-python-gui-application-with-tkinter)  
