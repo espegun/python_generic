@@ -29,6 +29,9 @@ Check `PATH`.
 `print("It's true!" if condition else "It's false")`  if-else one-liner.  
 
 
+---
+TBD subprocess: https://realpython.com/python-subprocess/ <-- This is very useful stuff!!!
+
 ## os
 Use bash commands from Python - the `subprocess` module also has options.  
 ```
