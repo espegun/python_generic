@@ -40,6 +40,23 @@ with os.popen("ls -la") as f:
 print(output)
 ```
 
+## bitwise operations
+hex 10 -> bin 1010  
+hex 9  -> bin 1001  
+hex 8  -> bin 1000  
+hex 11 -> bin 1011  
+```
+> python -c "print(10&9)"
+8
+```
+```
+> python -c "print(10|9)"
+11
+```
+
+## hash
+`hash(obj) --> x bit hash  
+`hash(obj)&65535` --> 16 bit hash  
 
 ## Sorting
 ```
