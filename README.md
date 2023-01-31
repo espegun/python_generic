@@ -55,7 +55,7 @@ hex 11 -> bin 1011
 ```
 
 ## hash
-`hash(obj) --> x bit hash  
+`hash(obj)` --> x bit hash  
 `hash(obj)&65535` --> 16 bit hash  
 
 ## Sorting
