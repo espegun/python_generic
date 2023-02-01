@@ -41,6 +41,12 @@ print(output)
 ```
 
 ## bitwise operations
+```
+> python -c "print(hex(10))"
+0xa
+> python -c "print(bin(10))"
+0b1010
+```
 
 |dec | hex |    bin |
 |----|-----|--------|
@@ -50,19 +56,13 @@ print(output)
 | 11 | 0xb | 0b1011 |
 
 ```
-> python -c "print(10&9)"
+> python -c "print(10 & 9)"
 8
-> python -c "print(10|9)"
+> python -c "print(10 | 9)"
 11
-> python -c "print(10|9)"
+> python -c "print(0b1010 | 0x9)"
+11
 ```
-```
-> python -c "print(hex(10))"
-0xa
-> python -c "print(bin(10))"
-0b1010
-```
-
 
 ## hash
 `hash(obj)` --> x bit hash  
