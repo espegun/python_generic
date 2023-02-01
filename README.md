@@ -71,7 +71,7 @@ They are just different representations of the exact same underlying data.
 
 ## hash
 `hash(obj)` --> x bit hash  
-`hash(obj)&65535` --> 16 bit hash  
+`hash(obj) & 0xffff` --> 16 bit hash  
 
 ## Sorting
 ```
