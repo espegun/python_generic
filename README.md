@@ -46,7 +46,12 @@ print(output)
 0xa
 > python -c "print(bin(10))"
 0b1010
+> python -c "print(type(0b1010))"
+<class 'int'>
+> python -c "print(0b1010 == 10)"
+True
 ```
+They are just different representations of the exact same underlying data.
 
 |dec | hex |    bin |
 |----|-----|--------|
