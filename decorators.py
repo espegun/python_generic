@@ -3,29 +3,40 @@
 import time
 
 
-def wrap_timer_around_this_func(func):
+def wrap_timer_around_func(func):
+
+    """
+    The decorator function, which is passed one function and returns
+    a larger function with something around the received one.
+    """
 
     def wrapper(arg1):
 
         t1 = time.time()
         func(arg1)
         t2 = time.time()
-        print(f"That took {t2-t1} time.")
+        print(f"That took {t2-t1} seconds.")
 
     return wrapper
 
-@wrap_timer_around_this_func
-def print_greeting(name):
+# Example 1 - with @ notation
+@wrap_timer_around_func
+def print_greeting_1(name):
+    "A simple, inner function"
 
-    print(f"Hello, my good {name}")
+    print(f"Hello, my good {name}!")
+
+print_greeting_1("Mr. Fuzzywig")  # Wrapper has been applied. With the @notation, the wrapped function has it's original name.
 
 
-print_greeting("Mr. Fuzzywig")  # Wrapper has been applied.
+# Example 2 - less smooth, easier understandable
+def print_greeting_2(name):
+    "Another simple, inner function"
 
+    print(f"Top of the morning to you, {name}!")
 
-# Alternative to the @notation
-# timed_greeting = wrap_timer_around_this_func(print_greeting)  # Alternative 1
-# timed_greeting("Mr. Fuddlesworth")
+timed_greeting = wrap_timer_around_func(print_greeting_2)
+timed_greeting("Frank")
 
 
 
