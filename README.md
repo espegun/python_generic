@@ -120,6 +120,9 @@ for y, c in product(years, chars):
 `element = next((element = next((j for j in my_list if j.name == "Something"), None)`  
 
 ## Decorators
+* What: Add functionality around another function.
+* Why: ....
+
 See the example in [decorators.py](decorators.py).
 
 Add a wrapper function around another function, often used for logging and timing.  
