@@ -120,6 +120,8 @@ for y, c in product(years, chars):
 `element = next((element = next((j for j in my_list if j.name == "Something"), None)`  
 
 ## Decorators
+See the example in [decorators.py](decorators.py).
+
 Add a wrapper function around another function, often used for logging and timing.  
 [Tutorial](https://www.datacamp.com/community/tutorials/decorators-python)  
 [Why decorators are pure genius](https://towardsdatascience.com/why-decorators-in-python-are-pure-genius-1e812949a81e) **READ IT**   
