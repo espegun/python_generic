@@ -1,6 +1,8 @@
 # Generic Python
 The core language and it's standard library - no frameworks or external libraries.
 
+To understand general programming concepts, like OOP, FP or architecture styles, rather see [here](https://github.com/espegun/SW-development_and_CS/tree/master/architecture_and_programming_styles).
+
 Some useful concepts
 *In general handlers are functions that 'handle' certain events that they are registered for.*
 
