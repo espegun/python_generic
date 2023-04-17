@@ -31,4 +31,6 @@ See the `ThreadPoolExecutor_Examples.py` for examples.
 ## Queue - cross thread communication
 Use `queue.Queue` to communicate between threads. It has the locking mechanisms needed when there are several producers and/or consumers.
 
+You can send any kind of object through the queue, but often a string to send some simple information.
+
 See the example in `threads_and_queues.py`.
