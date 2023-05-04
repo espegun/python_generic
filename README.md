@@ -42,6 +42,13 @@ with os.popen("ls -la") as f:
 print(output)
 ```
 
+Both print to stdout and a file at the same time.
+```
+with open("jalla.txt", "a") as dumpfile:
+    for f in [sys.stdout, dumpfile]:
+        print(s, file=f)
+```
+
 ## bitwise operations
 ```
 > python -c "print(hex(10))"
