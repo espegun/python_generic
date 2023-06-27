@@ -1,0 +1,4 @@
+This message will be logged to both the file and the console
+This message will be logged to both the file and the console
+This message will be logged to both the file and the console
+This message will be logged to both the file and the console
