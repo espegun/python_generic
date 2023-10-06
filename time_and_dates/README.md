@@ -8,15 +8,26 @@ Bruk ISO-8601.
 ...  
 
 ## Useful commands
+Dates:
 ```
-from datetime import datetime, timedelta
-now = datetime.now()
-td = timedelta(days=5, hours=5, minutes=5, seconds=5)
-future = now + td
-
+import datetime
+date1 = datetime.date(2021, 5, 12)  # Type datetime.date, printed as "2021-05-12"
+date2 = date1 + datetime.timedelta(days=5)  # Type datetime.date, printed as "2021-05-17"
+date3 = datetime.date.today()  # Type datetime.date 
+```
+Datetimes:
+```
+import datetime
+dt1 = datetime.datetime(2021, 5, 21, 12, 0, 0)  # Type datetime.datetime, printed as "2021-05-21 12:00:00"
+dt2 = dt1 + datetime.timedelta(days=1, seconds=30, minutes=10, hours=1)  # Type datetime.datetime, printed as "2021-05-22 13:10:30
+dt3 = datetime.datetime.now()  # Type datetime.datetime, printed as "2023-10-06 14:41:07.285696"
+```
+To and from strings
+```
 dt_obj = datetime.datetime.strptime(dt_str, '%Y-%m-%d %H:%M:%S')
 dt_str = datetime.datetime.strftime(dt_obj, '%Y-%m-%d %H:%M:%S')
 ```
+
 
 ## Useful links
 [Description](https://www.cisco.com)  
