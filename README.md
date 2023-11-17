@@ -157,7 +157,9 @@ Then, concretely in Python:
 import xml.etree.ElementTree as ET
 root = ET.parse(file_full_path).getroot()
 for child in root.iter():
-   ...
+    print(child.tag)  # str
+    print(child.attrib)  # dict
+    print(child.text)  # str
 ```
 
 
