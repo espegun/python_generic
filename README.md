@@ -142,6 +142,28 @@ Add a wrapper function around another function, often used for logging and timin
 [Repo example file](https://github.com/espegun/python_generic/blob/main/decorators.py)  
 [Great premade decorators](https://towardsdatascience.com/10-fabulous-python-decorators-ab674a732871)  
 
+## xml
+[Understand the structure video](https://www.youtube.com/watch?v=KeLiQXqVgMI)  
+`<TAGNAME attribute1=....> text value and/or childnodes </TAGNAME>`  
+* Nodes == Elements
+* The same tag name can be reused, in child nodes or sibling nodes.
+* Nodes can have attributes, specified as above.
+* Nodes can also have a text value between the start and end tag.
+* Nodes can also have child nodes between the start and end tag.
+
+[ElementTree in Python](https://www.datacamp.com/tutorial/python-xml-elementtree)  
+Then, concretely in Python:
+```
+import xml.etree.ElementTree as ET
+root = ET.parse(file_full_path).getroot()
+for child in root.iter():
+    print(child.tag)  # str
+    print(child.attrib)  # dict
+    print(child.text)  # str
+```
+
+
+
 ## Links
 [The Zen of Python - forklart](https://python.plainenglish.io/pythons-rules-programming-by-the-creator-of-the-code-26a6201ade4)  
 [The ultimate cheat sheet - a README](https://github.com/gto76/python-cheatsheet)  
