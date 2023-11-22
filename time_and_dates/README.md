@@ -28,6 +28,13 @@ dt_obj = datetime.datetime.strptime(dt_str, '%Y-%m-%d %H:%M:%S')
 dt_str = datetime.datetime.strftime(dt_obj, '%Y-%m-%d %H:%M:%S')
 ```
 
+When working with data which is should be convertable to text, during storage or 
+```
+dt = datetime(2023, 11, 22, 12, 20, 00)
+assert dt == datetime.fromisoformat(dt.isoformat())
+```
+You may also (de)serialize to JSON.
+
 
 ## Useful links
 [Description](https://www.cisco.com)  
