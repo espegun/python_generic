@@ -24,7 +24,8 @@ dt3 = datetime.datetime.now()  # Type datetime.datetime, printed as "2023-10-06 
 ```
 To and from strings
 ```
-dt_obj = datetime.datetime.strptime(dt_str, '%Y-%m-%d %H:%M:%S')
+dt = datetime.datetime.strptime(dt_str, '%Y-%m-%d %H:%M:%S')
+date = dt.date()  # After using strp to create a datetime.datetime object 
 dt_str = datetime.datetime.strftime(dt_obj, '%Y-%m-%d %H:%M:%S')
 ```
 
