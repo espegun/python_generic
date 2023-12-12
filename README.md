@@ -170,6 +170,7 @@ for child in root.iter():
 [Importany Python concepts LES](https://dacus-augustus.medium.com/top-12-most-important-python-concepts-24f59945a409)
 [Installing Python on Ubuntu](http://ubuntuhandbook.org/index.php/2020/10/python-3-9-0-released-install-ppa-ubuntu/)
 [Lots of tutorials @ geeksforgeeks](https://www.geeksforgeeks.org/python-programming-language/?ref=shm)  
+[Plenty of Python tutorials](https://github.com/practical-tutorials/project-based-learning?tab=readme-ov-file#python)  
 
 TBD: os module
 `src_dir = os.path.join(os.getcwd(), "test", "src")`  
