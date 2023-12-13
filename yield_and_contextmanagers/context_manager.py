@@ -21,7 +21,7 @@ def get_resource():
 with get_resource() as res:
     i = 0
     while i < 5:
-        print(f"Using {res})
+        print(f"Using {res}")
         time.sleep(1)
         i += 1
 
