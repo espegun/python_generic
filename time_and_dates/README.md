@@ -38,6 +38,15 @@ assert dt == datetime.fromisoformat(dt.isoformat())
 You may also (de)serialize to JSON.
 
 
+
+
+
+Timestamp:
+The number of seconds til 1970-01-01.  
+It is easier to work with numbers.
+
+
+
 ## Useful links
 [Description](https://www.cisco.com)  
 [strftime.org specification](https://strftime.org)  
