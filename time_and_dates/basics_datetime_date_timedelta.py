@@ -22,4 +22,12 @@ dt5 = datetime.datetime.now()
 print(dt4, dt4.timestamp(), datetime.datetime.fromtimestamp(dt4.timestamp()))
 print(dt5, dt5.timestamp(), datetime.datetime.fromtimestamp(int(dt5.timestamp())))
 
+
+print("\nTimedelta")
+dt6 = datetime.datetime.now()
+td = datetime.timedelta(weeks=1, days=0, hours=0, minutes=0, seconds=0, milliseconds=0)
+print(f"Now: {dt6}")
+print(f"A week from now: {dt6 + td}")
+
+
 print("That was fun!")
