@@ -9,6 +9,7 @@ Bruk ISO-8601.
 
 ## Useful commands
 Dates:
+datetime.datetime is generally preferable over date, since date does not support timezones.  
 ```
 import datetime
 date1 = datetime.date(2021, 5, 12)  # Type datetime.date, printed as "2021-05-12"
@@ -39,6 +40,6 @@ You may also (de)serialize to JSON.
 
 ## Useful links
 [Description](https://www.cisco.com)  
-
+[strftime.org specification](https://strftime.org)  
 
 
