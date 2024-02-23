@@ -36,4 +36,22 @@ for line in lines:
         captured_info.append(json.loads(json_str))  # Append, as a dict
 print(captured_info)
 
+print("\n==== Example, matching serial numbers ====")
+SN1 = "A12B12345"
+SN2 = "A12B123456789"
+
+PATTERN = r"^A\d{2}B\d{5}$"
+for sn in [SN1, SN2]:
+    print(re.match(PATTERN, sn))  # Match
+    if re.match(PATTERN, sn):
+        print(f"Found match for {sn}")
+        print(re.match(PATTERN, sn).group(0))
+    else:
+        print(f"Didn't find match for {sn}")
+    print("---")
+
+
+
+
+
 print("That was fun.")
